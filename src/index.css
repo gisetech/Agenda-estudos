@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  /* User's custom color palette from image */
+  --color-brand-purple: #572EA3;
+  --color-brand-indigo: #302EA3;
+  --color-brand-violet: #7A23A3;
+  --color-brand-blue: #2E50A3;
+  --color-brand-magenta: #A31DA2;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FAFCFE; /* Extremely clean, pure bright off-white with touch of cool tint */
+  color: #1E293B;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom gorgeous minimalist scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #E2E8F0;
+  border-radius: 9px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #CBD5E1;
+}
+
+/* Modern clean utility focus layout shadows */
+.minimal-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.02), 0 1px 2px -1px rgba(0, 0, 0, 0.02);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.minimal-card:hover {
+  border-color: #CBD5E1;
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.03), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.custom-input {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  padding: 0.625rem 0.875rem;
+  font-size: 0.8125rem;
+  color: #1E293B;
+  transition: all 0.15s ease-in-out;
+}
+
+.custom-input:focus {
+  border-color: #94A3B8;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(148, 163, 184, 0.12);
+}
+
+/* Tab indicator */
+.tab-active {
+  color: #0F172A;
+  font-weight: 600;
+  border-bottom-color: #0F172A;
+}
+

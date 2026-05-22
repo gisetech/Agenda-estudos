@@ -1,0 +1,6 @@
+{
+  "name": "Gerenciador de Estudos",
+  "description": "Painel centralizado para acompanhar cursos, eventos, tarefas e anotações com visualização em calendário.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
